@@ -2,6 +2,9 @@
 
 function collect_last_element(collection) {
   //在这里写入代码
+  if(Array.isArray(collection) && collection.length) {
+    return collection.pop();
+  }
 }
 
 module.exports = collect_last_element;

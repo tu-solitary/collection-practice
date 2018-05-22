@@ -1,6 +1,11 @@
 'use strict';
-var rank_asc = function(collection){
-  return [6,5,4,3,2];
+var rank_asc = function (collection) {
+  function ascSortRule(a, b) {
+    return a === b ? 0
+      : a < b ? 1
+        : -1;
+  }
+  return collection.sort(ascSortRule);
 };
 
 module.exports = rank_asc;

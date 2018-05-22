@@ -1,6 +1,11 @@
 'use strict';
 var rank_desc = function(collection){
-  return [2,3,4,5,6];
+  function descSortRule(a, b) {
+    return a === b ? 0
+      : a < b ? -1
+        : 1;
+  }
+  return collection.sort(descSortRule);
 };
 
 module.exports = rank_desc;

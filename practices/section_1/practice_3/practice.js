@@ -1,5 +1,5 @@
-function collect_same_elements(collection_a, object_b) {
-  //在这里写入代码
+function collect_same_elements(collection_a, collection_b) {
+  return collection_a.filter(elementFromA => collection_b.value.includes(elementFromA));
 }
 
 module.exports = collect_same_elements;

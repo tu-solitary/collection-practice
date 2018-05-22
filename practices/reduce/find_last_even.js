@@ -1,7 +1,8 @@
 'use strict';
 
 function find_last_even(collection) {
-  //在这里写入代码
+  let reverseIndex = collection.reverse().findIndex(element => element % 2 === 0);
+  return collection.length - reverseIndex -1;
 }
 
 module.exports = find_last_even;

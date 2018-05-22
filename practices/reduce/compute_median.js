@@ -1,8 +1,8 @@
 'use strict';
 
-function compute_median(collection) {
-  //在这里写入代码
-}
+const median = require('../utils/numbers').median;
+
+const compute_median = median;
 
 module.exports = compute_median;
 
